@@ -1,0 +1,61 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+	text-align: center;
+	letter-spacing: 2px;
+	font-weight: lighter;
+	color: blue;
+	text-transform: uppercase;
+	margin: 1em 0;
+}
+
+h3 {
+	letter-spacing: 2px;
+	color:blue;
+	text-align: center;
+	margin: 0;
+	font-weight: lighter;
+}
+
+img {
+	width: 100%;	
+}
+
+.box {
+	display: grid;
+	grid-gap: 20px;
+	max-width: 1200px;
+	
+}
+.box .primarybox {
+	border: 2px solid #eee;
+}
+
+footer {
+	background-color: red;
+	padding: 1em 0;
+	}
+
+.myFooter {
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+/* Repsonsive for Tablet and Laptops */
+@media (min-width: 600px) {
+    .box{
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (min-width:900px) {
+    .box {
+      margin: 1rem auto;
+      width: 70%;
+      margin: 3rem auto;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
