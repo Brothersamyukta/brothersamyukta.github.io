@@ -45,9 +45,6 @@ nav a:hover {
     justify-content: space-between;
     background-color: #FAEBD7;
 }
-.site-title {
-   margin: 3em 2em;
-}
 .gallery img {
    display: block;
    margin-left: auto;
