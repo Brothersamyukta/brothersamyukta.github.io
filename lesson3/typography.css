@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+h1, h3 {
+	font-family: 'Ubuntu', sans-serif;
+}
+p {
+	font-family: 'Open Sans', sans-serif;
+}
+nav {
+	background-color: #36454f;
+	text-align: center;
+	box-shadow: 0 2px 15px gray;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+nav ul li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+    font-size: 0.95rem;
+    font-family: 'Open Sans', sans-serif;
+}
+nav a:hover {
+	background-color: #bbb;
+	color: #36454f;
+}
+.main-header {
+	display: flex;
+    justify-content: space-between;
+    background-color: #FAEBD7;
+}
+.site-title {
+   margin: 3em 2em;
+}
+@media (min-width:768px) {
+	ul {
+		display: flex;
+	}
+}
+
