@@ -1,0 +1,113 @@
+* {  margin:0;
+     padding:0;
+     box-sizing: border-box;
+  }
+.maininfo {
+    display: flex;
+    justify-content: center;
+}  
+.logo {
+    width: 75px;
+    height: 75px;
+}
+.sitetitle {
+    
+}
+.slogan {
+     text-align: center;
+     border: 1px solid red;
+}
+.site-info {
+    margin: 1em .7em;
+}
+/* navigation */
+nav button {
+	margin: .2rem 2%;
+	background-color: #bbb;
+	border: none;
+	font-size: 1.6rem;
+	color: #555;
+}
+nav {
+	background-color: #36454f;
+	font-family:'Open Sans', sans-serif; 
+}
+nav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+nav ul li a {
+	display: block;
+	padding: .8rem 2%;
+	text-decoration: none;
+	color: #000;
+	border-top: 1px solid rgba(0,0,0,0.5);
+
+}
+nav ul li a:hover {
+	background-color: rgb(187, 187, 189);
+}
+nav ul li.active a {
+	background-color: rgb(187, 187, 187);
+	color: #fff;
+}
+nav ul.hide {
+	display: none;
+}	
+/* main */
+.main-content {
+	margin-top: .5em;
+	text-align: center;
+	font-family: 'Ubuntu', sans-serif;
+}
+.contentbox {
+	border: 1px solid #bbb;
+	padding: 2em 2em;
+	background-color: #bbb;
+	font-family: 'Open Sans', sans-serif;
+	display: block;
+}
+.box {
+	display: grid;
+	grid-gap: 1em;
+}
+footer {
+	background-color:  #FAEBD7;;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	font-family: 'Open Sans', sans-serif;
+}
+/*--------clear fix: Force an element not to collapse-----*/
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+@media only screen and (min-width: 35em) {
+	nav button {
+		display: none;
+	}
+	nav ul {
+		margin-left: 2%;
+	}
+	nav ul.hide {
+		display: block;
+	}
+	nav ul li {
+		float: left;
+	}
+	nav ul li a {
+		 border: none;
+		 border-right: 1px solid rgba (0,0,0,0.3);
+		 padding: .8rem 1rem;
+	}
+}
+@media only screen and (min-width: 64rem) {
+	nav ul li a {
+		padding: 6rem 1 rem;
+	}
+}
