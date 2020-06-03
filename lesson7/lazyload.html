@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <title>Lazy Loading</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="lazyload.css" rel="stylesheet"> 
+</head>
+<body>
+<main>
+    <h1>Progressive Loading Image</h1>
+
+    <picture>
+       <img src="placeholder.png"   data-src="basket.jpg" alt="basketball men" >
+    </picture>
+        
+    <picture>
+        <img src="placeholder.png"  data-src="people.jpg" alt="basketball men" >
+    </picture>
+        
+    <picture>
+        <img src="placeholder.png"  data-src="girl.jpg" alt="basketball men">
+    </picture>
+
+    <picture>
+        <img src="placeholder.png" data-src="basket.jpg" alt="basketball men">
+    </picture>
+
+    <picture>
+        <img src="placeholder.png" data-src="men.jpg" alt="basketball men">
+    </picture>
+
+</main>
+
+<footer>
+  <script src="lazy.js"></script>
+</footer>
+
+</body>
+</html>
