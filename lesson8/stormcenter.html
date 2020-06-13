@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <title>Storm Center</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='storm.css'>
+</head>
+<body onload="checkAd()"> 
+        <aside id="checkAds"> 
+           <h4>Friday = Be ready to eat PanCakes in the Park! 9:00 a.m</h4>
+        </aside>
+        <!--HEADER-->
+        <header class="maininfo">
+        <img class="logo" src="sun1.png" alt="company logo"> 
+        <div class="site-info">
+        <h1 class="sitetitle">Season Of Love</h1>
+        <p class="slogan">Look Before You Lock!</p>
+        </div>
+        </header>
+        
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776;</a></li>
+            <li><a href="#"> Home</a></li>
+            <li ><a href="Preston"> Preston</a></li>
+            <li><a href="#"> Soda Springs</a></li>
+            <li><a href="#"> Fish Haven</a></li>
+            <li class="active"> <a href="#"> Storm Center</a></li>
+            <li><a href="#"> Gallery</a></li>
+        </ul>
+    </nav>
+
+<form action="Thankyou/thanks.html" target="_blank" method="get"> 
+    <fieldset>
+        <h4 class="contact-title">Personal Information</h4>
+        <label for="fullName">Full Name
+        <input type="text" name="fullName" id="fullName" placeholder="Full Name"></label><br>
+    
+        <label for="email">Enter your Email
+        <input type="email" name="email" id="email" required placeholder="user@email.org"></label><br>
+          
+    </fieldset>
+
+    <fieldset>
+    <h4 class="contact-title">Contact Information</h4>
+    <label for="phone">Phone Number
+    <input type="tel" name="phone" id="phone" required placeholder="(555) 555-5555"></label><br>
+
+    <label for="zip">Zip Code
+	<input type="number" id="zip" required name="zip"></label><br>
+    </fieldset>
+    
+    <fieldset>
+        <h4 class="contact-title">Storm Information</h4>
+        <label for="stormDate">Storm Date
+        <input type="date" name="stormDate" id="stormDate"></label><br>
+    
+        <label for="stormType">Storm Type
+        <input list="storms" name="stormType" id="stormType"></label><br>
+        <datalist id="storms">
+            <option value="Flash Flood">
+            <option value="Hail">
+            <option value="Hurricane">
+            <option value="Thunderstorm">
+            <option value="Tornado">    
+        </datalist>
+        
+        <label class="flexly" for="rating">Rating &nbsp;&nbsp;&nbsp;
+        <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+        <span id="ratingvalue">5</span></label>
+        <datalist id="tickmarks">
+            <option value="0">
+            <option value="1">
+            <option value="2">
+            <option value="3">
+            <option value="4">
+            <option value="5">
+            <option value="6">
+            <option value="7">
+            <option value="8">
+            <option value="9">
+            <option value="10">
+          </datalist>
+          <br> 
+
+        <label for="stormRegion">Storm Region
+            <select name="stormRegion" id="stormRegion" required>
+            <option value="" selected="" disabled> Select Region..</option>
+            <option value="preston">Preston</option>
+            <option value="sodaSprings">Soda Springs</option>
+            <option value="fishHaven">Fish Haven</option>
+        </select>
+        </label>
+        <br>
+
+        <div class="danger">
+            <p class="paragraph">Danger Level</p>
+            <label  class="radio-btn" for="yes">Yes</label>
+            <input  type="radio" name="danger" value="yes" id="yes">
+            <label  class="radio-btn" for="no">No</label>
+            <input  type="radio" name="danger" value="no" id="no">
+            <label class="radio-btn"  for="mayBe">May Be</label>
+            <input type="radio" name="danger" value="mayBe" id="mayBe">
+            <br>
+        </div>
+        <br>
+    <label for="comment">Comments or additional information</label>
+    <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+    
+<br>
+    <input type="submit" value="Register" class="btn">
+  
+    </fieldset>
+</form>
+    <footer>
+
+    </footer>
+    <script src="storm.js"></script>
+</body>
+</html>
+
+

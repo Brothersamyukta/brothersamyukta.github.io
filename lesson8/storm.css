@@ -1,0 +1,179 @@
+* {  margin:0;
+    padding:0;
+    box-sizing: border-box;
+ }
+/* typography */
+h1,h3,h4 {
+   Font-family: 'Open Sans', sans-serif;
+}
+
+p,a {
+   Font-family: 'Ubuntu', sans-serif; 
+}
+
+/* logo */
+.maininfo {
+    display: flex;
+    justify-content: center;
+    background-color: #FAEBD7;
+}
+ 
+.logo {
+    width: 75px;
+    height: 75px;
+}
+ 
+.slogan {
+     text-align: center;
+}
+ 
+.site-info {
+    margin: 1em .7em;
+}
+ 
+.sitetitle {
+     font-weight: bold;
+     color: yellowgreen;
+}
+ #checkAds {
+     background-color: Tomato;
+     padding: 1em 2em;
+ }
+
+/*navgiation */
+ nav {
+    font-family:'Open Sans', sans-serif; 
+    margin: 0 auto;
+    line-height: 2.3em;
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+}
+
+.navigation a {
+    background-color: #36454f;
+    display: block;
+    text-align: center;
+    padding: .8rem 2%;
+    font-weight: bold;
+ }
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: yellowgreen;
+    text-align: center;
+} 
+
+nav ul li a:hover {
+    background-color: rgb(187, 187, 189);
+    color: #fff;
+}
+
+nav ul li.active a {
+    background-color: rgb(187, 187, 187);
+    color: #fff;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.responsive li {
+    display: block;
+} 
+
+label {
+    display: block;
+    padding: 1em 0;
+    margin: 0 2em;
+}
+input {
+    padding: .5rem .5rem;
+    border-radius: 4px;
+    color: #36454f;
+    background-color: #eee;
+    border: none;
+}
+
+.box {
+  border: 1px solid black;
+  box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.33); 
+  border-radius: 10px;
+  max-width: 100%;
+    
+}
+
+#no,#yes,#mayBe{
+    margin: 0 .4em;
+}
+#comment {
+    margin:0 2em;
+}
+fieldset {
+    background-color: #ddd;
+    border-color: tomato;
+    margin: 2em auto;
+    border: 2px dotted;
+}
+.btn {
+    margin: 1em 2em;
+    background-color:lightsalmon;
+    padding:1em 2em;
+}
+
+
+.flexly {
+	display: flex;
+	align-items: center;
+}
+
+#ratingvalue {
+    margin: 0 15px;
+}
+#stormRegion {
+    padding: .5em .5em;
+    background-color: #f4f4f4;
+}
+
+.paragraph {
+    font-family: inherit;
+    margin: 0 2em;
+}
+
+.contact-title {
+    margin: .5em .5em;
+}
+
+@media only screen and (min-width: 768px) {
+.navigation {
+     display: flex;
+}
+ 
+.navigation li {
+     display: block;
+     flex: 1 1 auto;
+}
+ 
+.navigation a {
+     text-align: center;
+}
+ 
+.navigation li:first-child {
+     display: none;
+}
+ 
+.navigation a:hover {
+    color: white;
+}
+ .danger {
+     display: flex;
+     align-items: center;
+ }
+} 
