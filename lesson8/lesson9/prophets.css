@@ -1,0 +1,58 @@
+*{
+    margin:0;
+}
+h1 {
+    text-align: center;
+    Font-family: 'Open Sans', sans-serif;
+}
+.cards {
+    text-align: center;
+}
+img {
+    display: block;
+    width: 50%;
+    margin: .5em auto;
+}
+section {
+    border: 3px solid #333;
+    max-width: 100%;
+    background-color: lightsteelblue;
+    margin: .5em .5em;
+}
+footer {
+    margin-top: 20px;
+    padding: 20px 0;
+    text-align: center;
+    background-color: #36454f;
+    color: white;
+}
+@media (min-width:768px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+@media (min-width:1024px) {
+    .cards {
+        display: grid;
+        grid-template-columns:repeat(4,1fr);
+    }
+    
+    section {
+        border: 3px solid #333;
+        max-width: 100%;
+        background-color: lightsteelblue;
+        margin: .5em .5em;
+    }
+  
+    .prophet-title {
+        margin:.5em 0;
+    }
+    .prophet-title,
+    .prophet-info,
+    .prophet-infos {
+        text-align: center;
+    }
+    
+}
