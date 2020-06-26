@@ -10,8 +10,11 @@ h2 {
 	color: blue;
 	text-transform: uppercase;
 	margin: 1em 0;
+	Font-family: 'Open Sans', sans-serif;
 }
-
+p {
+	Font-family: 'Ubuntu', sans-serif; 
+ }
 h3 {
 	letter-spacing: 2px;
 	color:blue;
