@@ -1,12 +1,37 @@
-body {
-    margin: 0;
-    padding: 0;
-}
+* {  margin:0;
+    padding:0;
+    box-sizing: border-box;
+ }
+
 h1, h3 {
 	font-family: 'Ubuntu', sans-serif;
 }
 p {
 	font-family: 'Open Sans', sans-serif;
+}
+/* logo */
+.maininfo {
+    display: flex;
+    justify-content: center;
+    background-color: #FAEBD7;
+}
+ 
+.logo {
+    width: 75px;
+    height: 75px;
+}
+ 
+.slogan {
+     text-align: center;
+}
+ 
+.site-info {
+    margin: 1em .7em;
+}
+ 
+.sitetitle {
+     font-weight: bold;
+     color: yellowgreen;
 }
 nav {
 	background-color: #36454f;
@@ -31,11 +56,6 @@ nav ul li a {
 nav a:hover {
 	background-color: #bbb;
 	color: #36454f;
-}
-.main-header {
-	display: flex;
-    justify-content: space-between;
-    background-color: #FAEBD7;
 }
 @media (min-width:768px) {
 	ul {

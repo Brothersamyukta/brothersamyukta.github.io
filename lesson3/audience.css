@@ -1,6 +1,6 @@
-body {
-    margin: 0;
+* { margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 h1, h3 {
 	font-family: 'Ubuntu', sans-serif;
@@ -16,10 +16,30 @@ p {
     padding: 15px;
     text-align: center;
 }
+/* logo */
+.maininfo {
+    display: flex;
+    justify-content: center;
+    background-color: #FAEBD7;
+}
+.logo {
+    width: 75px;
+    height: 75px;
+}
+.site-info {
+    margin: 1em .7em;
+} 
+.sitetitle {
+     font-weight: bold;
+     color: yellowgreen;
+}
 nav {
 	background-color: #36454f;
 	text-align: center;
-	box-shadow: 0 2px 15px gray;
+    box-shadow: 0 2px 15px gray;
+    margin: 0 auto;
+    line-height: 2.3em;
+    padding: 0;
 }
 nav ul {
 	list-style-type: none;
@@ -40,11 +60,11 @@ nav a:hover {
 	background-color: #bbb;
 	color: #36454f;
 }
-.main-header {
+/* .main-header {
 	display: flex;
     justify-content: space-between;
     background-color: #FAEBD7;
-}
+} */
 .gallery img {
    display: block;
    margin-left: auto;

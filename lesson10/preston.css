@@ -1,0 +1,300 @@
+* {  margin:0;
+    padding:0;
+    box-sizing: border-box;
+ }
+/* typography */
+h1,h3 {
+   Font-family: 'Open Sans', sans-serif;
+}
+p,a {
+   Font-family: 'Ubuntu', sans-serif; 
+}
+.maininfo {
+   display: flex;
+   justify-content: center;
+   background-color: #FAEBD7;
+}  
+.logo {
+   width: 75px;
+   height: 75px;
+}
+.slogan {
+    text-align: center;
+}
+.site-info {
+   margin: 1em .7em;
+}
+#checkAds {
+    background-color: Tomato;
+    padding: 1em 2em;
+}
+/* navigation */
+nav {
+    font-family:'Open Sans', sans-serif; 
+    margin: 0 auto;
+    line-height: 2.3em;
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+}
+
+.navigation a {
+    background-color: #36454f;
+    display: block;
+    text-align: center;
+    padding: .8rem 2%;
+    font-weight: bold;
+ }
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: yellowgreen;
+    text-align: center;
+} 
+
+nav ul li a:hover {
+    background-color: rgb(187, 187, 189);
+    color: #fff;
+}
+
+nav ul li.active a {
+    background-color: rgb(187, 187, 187);
+    color: #fff;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.responsive li {
+    display: block;
+} 
+
+/* main content */
+h1 {
+   display: block;
+   text-align: center;
+}
+/* newimage */
+.field-image img{
+   width: 100%;
+   padding: 0.9rem;
+   border-radius: 20px;
+}
+
+.overFlow {
+   position: relative;
+   margin: 1em 0;
+}
+
+/* .bigBox {
+   width: 100%;
+} */
+.box {
+   max-width: 400px;
+   position: absolute;
+   top: 1em;
+   margin-left: 1em;
+   padding: 1em 1em;
+   background: rgba(240, 255, 255, 0.788);
+   Font-family: 'Ubuntu', sans-serif;  
+   opacity: 0.6;
+   border-radius: 10px;
+}
+
+.summary-info{
+   color: red;
+   font-weight: bold;
+}
+
+ /* container */
+.container  {
+   display: none;
+   Font-family: 'Ubuntu', sans-serif; 
+}
+
+/* Article  */
+.article-box {
+   border: 1px solid black;
+   background-image: linear-gradient(0deg, #fedc97, transparent);
+   border-radius: 20px;
+   display: flex;
+   flex-direction: column;
+   margin-top: 1em;
+   padding: 2em 2em;
+}
+.article-box p {
+   margin: .5em 0;
+   text-align: justify;
+}
+.article-box img {
+   width: 100%;
+   box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.33);
+   order: -1;
+   margin: 1em auto;
+}
+
+/* Contact */
+.contact-info img{
+   display: none;
+}
+.contact-info {
+   border-radius: 10px;
+   margin: 1em 0;
+   text-align: center;
+   background-image: linear-gradient(0deg, #F0FFFF, transparent);
+}
+.contact-address {
+   margin: 1em 0;
+}
+
+/* Style all font awesome icons */
+.fa {
+   padding: 20px;
+   font-size: 30px;
+   width: 50px;
+   text-align: center;
+   text-decoration: none;
+}
+  
+/* Add a hover effect if you want */
+.fa:hover {
+   opacity: 0.7;
+}
+/* Set a specific color for each brand */
+ 
+/* Facebook */
+.fa-facebook {
+   background: #3B5998;
+   color: white;
+} 
+/* Twitter */
+.fa-twitter {
+   background: #55ACEE;
+   color: white;
+}
+/* pinterest*/
+.fa-pinterest {
+   background: #BD081C;
+   color: white;
+}
+/* whatsapp*/
+.fa-whatsapp {
+   background: #4AC959;
+   color: white;
+}
+
+/* footer */
+footer {
+   background-color: #FAEBD7;
+   display: flex;
+   flex-flow: column;
+   align-items: center;
+   justify-content: center;
+   padding: 10px;
+   font-family: 'Open Sans', sans-serif;
+}
+@media only screen and (min-width: 32.5em) {
+.navigation {
+    display: flex;
+}
+
+.navigation li {
+    display: block;
+    flex: 1 1 auto;
+}
+
+.navigation a {
+    text-align: center;
+}
+
+.navigation li:first-child {
+    display: none;
+}
+
+.navigation a:hover {
+   color: white;
+}
+.forecast-title {
+    text-align: center;
+}
+/*forecast table*/
+.forecast-table {
+   width: 80%;
+   margin: 2em auto;
+   border-collapse: collapse;
+ }
+ .forecast-table th {
+   background-color: #36454f;
+   padding: .5em .5em;
+   color: black;
+   border: 1px solid black;
+ }
+ .forecast-table tr {
+   background-color:  #FAEBD7;
+   text-align: center;
+ }
+ .forecast-table td {
+   border: 1px solid black;
+   padding: 1em 1em;
+ }
+ .forecast-image img{
+   width: 50px;
+   height:50px;
+ }
+ /*5 day forecast  */
+.container  {
+   display: block;
+}
+ /* article */
+.article-box {
+   border: 1px solid #36454f;
+   display: flex;
+   flex-direction: row;
+   padding: 3em 3em;
+   max-width: 80%;
+   margin: 0 auto;
+ }
+ .article-body p {
+   margin: 1em 0; 
+   text-align: left;
+   padding: .5rem;
+ } 
+ .article-box img {
+   width: 300px;
+   height: 200px;
+   padding: .5rem
+ } 
+ .api {
+    display: none;
+ }
+/* contact */ 
+.contact-info {
+   display: flex;
+   justify-content: space-around;
+   width: 80%;
+   margin: 1em auto;
+ }
+ .contact-info img {
+    display: block;
+   width: 300px;
+   height: 300px;
+   margin:2em 0;
+   border: 1px solid #36454f;
+ }
+ .contact-info .contact-address {
+   margin-top: 7em;
+}
+@media only screen and (min-width: 768px) {
+   nav ul li a {
+       padding: 1em 1em;
+   }   
+}
+}
