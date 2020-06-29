@@ -25,30 +25,28 @@ p,a {
    margin: 1em .7em;
 }
 /* navigation */
-nav button {
-   /* margin: .2rem 2%; */
-   background-color: #bbb;
-   border: none;
-   font-size: 1.6rem;
-   color: #555;
-}
 nav {
-   background-color: #36454f;
    font-family:'Open Sans', sans-serif; 
+   margin: 0 auto;
+   line-height: 2.3em;
 }
-nav ul {
-   list-style-type: none;
+.navigation {
+   list-style: none;
    padding: 0;
-   margin: 0;
+}
+.navigation a {
+   background-color: #36454f;
+   display: block;
+   text-align: center;
+   padding: .8rem 2%;
+   font-weight: bold;
 }
 nav ul li a {
    display: block;
-   /* padding: .8rem 2%; */
    text-decoration: none;
-   color: #000;
-   border-top: 1px solid rgba(0,0,0,0.5);
-
-}
+   color: yellowgreen;
+   text-align: center;
+} 
 nav ul li a:hover {
    background-color: rgb(187, 187, 189);
    color: #fff;
@@ -57,37 +55,45 @@ nav ul li.active a {
    background-color: rgb(187, 187, 187);
    color: #fff;
 }
-nav ul.hide {
+.navigation li:first-child {
+   display: block;
+}
+.navigation li {
    display: none;
 }
-.btn:hover {
-   background-color: rgb(187, 187, 189);
-   color: #fff;
-   cursor: pointer;
-}
-
+.responsive li {
+   display: block;
+} 
 /* main content */
 h1 {
    display: block;
    text-align: center;
 }
-/* House */
-.house-image img{
-   width:100%;
+.field-image img{
+   width: 100%;
+   padding: 0.9rem;
+   border-radius: 20px;
+}
+
+.overFlow {
+   position: relative;
+   margin: 1em 0;
 }
 .box {
    max-width: 400px;
    position: absolute;
-   top: 15em;
+   top: 1em;
    margin-left: 1em;
    padding: 1em 1em;
-   background: #F0FFFF;
+   background: rgba(240, 255, 255, 0.788);
+   Font-family: 'Ubuntu', sans-serif;  
+   opacity: 0.6;
+   border-radius: 10px;
 }
 .summary-info{
    color: red;
    font-weight: bold;
 }
-
 /* 5day forecast */
  /* container */
 .container  {
@@ -175,29 +181,27 @@ footer {
    padding: 10px;
    font-family: 'Open Sans', sans-serif;
 }
-/*--------clear fix: Force an element not to collapse-----*/
-.clearfix:after {
-   content: "";
-   display: table;
-   clear: both;
-}
 @media only screen and (min-width: 35em) {
-   nav button {
-       display: none;
-   }
-   nav ul {
-       margin-left: 2%;
-   }
-   nav ul.hide {
-       display: block;
-   }
-   nav ul li {
-       float: left;
-   }
-   nav ul li a {
-        border: none;
-        padding: 1em 1em;
-   }
+   .navigation {
+      display: flex;
+  }
+  
+  .navigation li {
+      display: block;
+      flex: 1 1 auto;
+  }
+  
+  .navigation a {
+      text-align: center;
+  }
+  
+  .navigation li:first-child {
+      display: none;
+  }
+  
+  .navigation a:hover {
+     color: white;
+  }
    .forecast-title {
       text-align: center;
 }

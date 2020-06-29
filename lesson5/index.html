@@ -24,26 +24,26 @@
 
 </header>
 <!---Navigation-->
-<nav class="clearfix">
-    <button onclick="toggleMenu()">&#9776;</button>
-    <ul id="primaryNav" class="hide">
-     <div class="myDiv">
-        <li class="btn"><a href="#"> Home</a></li>
-		<li class="btn active"><a href="#"> Preston</a></li>
-		<li class="btn"><a href="#"> Soda Springs</a></li>
-        <li class="btn"><a href="#"> Fish Haven</a></li>
-        <li class="btn"><a href="#"> Storm Center</a></li>
-        <li class="btn"><a href="#"> Gallery</a></li>
-     </div>
+<nav>
+    <ul class="navigation">
+       <li><a href="#" onclick="toggleMenu()">&#9776;</a></li>
+       <li><a href="#"> Home</a></li>
+		   <li class="active"><a href="#"> Preston</a></li>
+		   <li><a href="#"> Soda Springs</a></li>
+       <li><a href="#"> Fish Haven</a></li>
+       <li><a href="#"> Storm Center</a></li>
+       <li><a href="#"> Gallery</a></li>
     </ul>
 </nav>
 
 <!--Content-->
 <main>
     <h1>Preston Idaho</h1>
-<div class="house-image">
+<div class="bigBox">
+  <div class="overFlow">
+  <div class="field-image">
     <img class="image" src="house1.jpg" alt="house image">
-</div>
+
 <div class="box"> 
     <h3>Weather Summary</h3> 
     <p>Currently: <span class="summary-info"> Sunny</span></p>
@@ -51,6 +51,9 @@
     <p>Wind Chill: <span class="summary-info"> 85&#8457;</span></p>
     <p>Humidity: <span class="summary-info"> 50%</span></p>
     <p>Wind Speed: <span class="summary-info"> 20mph</span></p>  
+   </div>
+  </div>
+ </div>
 </div>
 
 <!--5 day forecast-->
@@ -121,7 +124,7 @@
      <p>269 S 5th W</p>
      <p>Rexburg, Idaho</p>
      <p>208-555-6666</p>
-   </div> 
+    
   <!--icons-->
  <div class="social-icons">
   <a href="#" class="fa fa-facebook"></a>
@@ -129,6 +132,7 @@
   <a href="#"  class=" fas fa fa-pinterest"></a>
  <a href="#"  class=" fas fa fa-whatsapp"></a>
  </div>
+</div>
 </div>
 </main>
 <footer>
