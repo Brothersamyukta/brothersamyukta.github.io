@@ -1,5 +1,5 @@
 function toggleMenu () {
-    (document.getElementById("primaryNav").classList.toggle("hide"));
+    (document.getElementsByClassName("navigation")[0].classList.toggle("responsive"));
 }
 let daysNames = [
     'Sunday',
@@ -25,7 +25,7 @@ let months = [
     'December'
 ];
   
-let date = new Date();
+let date = new Date(document.lastModified);
 let dayName = daysNames[date.getDay()];
 let monthName = months[date.getMonth()];
 let year = date.getFullYear();

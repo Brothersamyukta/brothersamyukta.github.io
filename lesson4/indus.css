@@ -17,7 +17,55 @@
     margin: 1em .7em;
 }
 /* navigation */
-nav button {
+nav {
+    font-family:'Open Sans', sans-serif; 
+    margin: 0 auto;
+    line-height: 2.3em;
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+}
+
+.navigation a {
+    background-color: #36454f;
+    display: block;
+    text-align: center;
+    padding: .8rem 2%;
+    font-weight: bold;
+ }
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: yellowgreen;
+    text-align: center;
+} 
+
+nav ul li a:hover {
+    background-color: rgb(187, 187, 189);
+    color: #fff;
+}
+
+nav ul li.active a {
+    background-color: rgb(187, 187, 187);
+    color: #fff;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.responsive li {
+    display: block;
+} 
+
+/* nav button {
 	margin: .2rem 2%;
 	background-color: #bbb;
 	border: none;
@@ -50,7 +98,7 @@ nav ul li.active a {
 }
 nav ul.hide {
 	display: none;
-}	
+}	 */
 /* main */
 .main-content {
 	margin-top: .5em;
@@ -77,29 +125,27 @@ footer {
 	padding: 10px;
 	font-family: 'Open Sans', sans-serif;
 }
-/*--------clear fix: Force an element not to collapse-----*/
-.clearfix:after {
-	content: "";
-	display: table;
-	clear: both;
-}
 @media only screen and (min-width: 35em) {
-	nav button {
-		display: none;
-	}
-	nav ul {
-		margin-left: 2%;
-	}
-	nav ul.hide {
-		display: block;
-	}
-	nav ul li {
-		float: left;
-	}
-	nav ul li a {
-		 border: none;
-		 padding: .8rem 1rem;
-	}
+.navigation {
+    display: flex;
+}
+
+.navigation li {
+    display: block;
+    flex: 1 1 auto;
+}
+
+.navigation a {
+    text-align: center;
+}
+
+.navigation li:first-child {
+    display: none;
+}
+
+.navigation a:hover {
+   color: white;
+}
 }
 @media only screen and (min-width: 64rem) {
 	nav ul li a {
