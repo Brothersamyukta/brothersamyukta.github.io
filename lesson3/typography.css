@@ -4,7 +4,7 @@
  }
 
 h1, h3 {
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 p {
 	font-family: 'Open Sans', sans-serif;
@@ -30,36 +30,80 @@ p {
 }
  
 .sitetitle {
-     font-weight: bold;
-     color: yellowgreen;
+     font-weight: bolder;
 }
+/* navigation */
 nav {
-	background-color: #36454f;
-	text-align: center;
-	box-shadow: 0 2px 15px gray;
+	margin: 0 auto;
+	line-height: 2.3em;
+	font-family: 'Open Sans', sans-serif;
 }
-nav ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
+.navigation {
+    list-style: none;
+    padding: 0;
+}
+
+.navigation a {
+    background-color: #36454f;
+    display: block;
+    text-align: center;
+    padding: .8rem 2%;
+    font-weight: bold;
 }
 nav ul li a {
 	display: block;
 	color: #fff;
 	text-align: center;
-	padding: 0.75rem;
 	text-decoration: none;
-    font-size: 0.95rem;
-    font-family: 'Open Sans', sans-serif;
 }
 nav a:hover {
 	background-color: #bbb;
 	color: #36454f;
 }
+nav ul li a:hover {
+    background-color: rgb(187, 187, 189);
+    color: #fff;
+}
+
+nav ul li.active a {
+    background-color: rgb(187, 187, 187);
+    color: #fff;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.responsive li {
+    display: block;
+} 
+.typography {
+	text-align: center;
+}
 @media (min-width:768px) {
-	ul {
+	.navigation {
 		display: flex;
-	}
+   }
+	
+   .navigation li {
+		display: block;
+		flex: 1 1 auto;
+   }
+	
+   .navigation a {
+		text-align: center;
+   }
+	
+   .navigation li:first-child {
+		display: none;
+   }
+	
+   .navigation a:hover {
+	   color: white;
+   }
 }
 
