@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <title>Season Of Love Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type='text/css' media='screen' href='preston.css'>
+</head>
+<body onload="checkAd()"> 
+  <aside id="checkAds"> 
+    <h4>Friday, Be ready to eat PanCake</h4>
+  </aside>
+<!--HEADER-->
+<header class="maininfo">
+<img class="logo" src="sun1.png" alt="company logo"> 
+<div class="site-info">
+<h1 class="sitetitle">Season Of Love</h1>
+<p class="slogan">Look Before You Lock!</p>
+</div>
+</header>
+<!---Navigation-->
+<nav>
+    <ul class="navigation">
+      <li><a href="#" onclick="toggleMenu()">&#9776;</a></li>
+      <li><a href="#"> Home</a></li>
+		  <li class="active"><a href="#"> Preston</a></li>
+		  <li><a href="#"> Soda Springs</a></li>
+      <li><a href="#"> Fish Haven</a></li>
+      <li><a href="#"> Storm Center</a></li>
+      <li><a href="#"> Gallery</a>
+    </ul>
+</nav>
+
+<!--Content-->
+<main>
+    <h1>Preston Idaho</h1>
+    <div class="bigBox">        
+      <div class=overFlow> 
+        <div class="field-image">
+          <picture>
+            <source srcset="L1200px.jpg" media="(min-width:1024px)">
+            <source srcset="M800px.jpg" media="(min-width:760px)"> 
+            <img src="S470px.jpg" alt="greenfield with sun">   
+          </picture>
+          <div class="box"> 
+            <h3>Weather Summary</h3> 
+            <p>Currently: <span id="summary-info"></span></p>
+            <p>High: <span id="summary-temp">30</span>°F</p>
+            <p>Wind Chill: <span id="summary-wind">90</span>°F</p>
+            <p>Humidity: <span id="summary-humid"></span>%</p>
+            <p>Wind Speed: <span id="summary-speed"></span>mph</p>  
+          </div>
+         </div>
+      </div>   
+      </div>
+         
+<!--5 day forecast-->
+<div class="container">
+    <h3 class="forecast-title">5 Day Forecast</h3>
+    <table class=forecast-table>
+     <tr id="forecastDays">   
+       <th class="api">Required Javascript</th>
+      </tr>
+      <tr id="forecastTable">
+        <th class="api">Required Javascript</th>
+      </tr>
+    </table>
+</div> 
+
+<section id="events">
+  <h4 class="event-title"><i class="far fa-calendar-alt"></i> Upcoming Events</h4>
+  <hr>
+</section>
+
+
+<!--Article-->
+<div class="article-box">
+ <div class="article-body">
+    <p>
+      Preston is a city in Franklin County, Idaho, United States. The population was 5,204 
+      at the 2010 census.[4] The city is the county seat of Franklin County.[5] It is part of 
+      the Logan, Utah-Idaho Metropolitan Statistical Area.
+      The Bear River Massacre occurred in 1863 at a point a few miles northwest of Preston. 
+      The Bear River Massacre Site is a National Historic Landmark.
+
+      In 1866, Latter-day Saint (LDS, or Mormon) pioneers arrived in the northern end of the Cache Valley, 
+      stretching across southeastern Idaho and northeastern Utah.They founded a community in that location 
+      and named it Worm Creek, but in 1881 changed it to Preston because leaders of the LDS Church in Salt Lake City
+      objected to the name "Worm Creek" being part of any church congregation's name.[6][7] The name Preston was 
+      suggested by a local member to honor William B. Preston, who at the time was president of the LDS Church's Cache Stake.[6][7]
+
+      It was not until the 1880s while William C. Parkinson was serving as the bishop of the Preston LDS Ward that a regular townsite was laid out.[8]
+      ...<a href="https://en.wikipedia.org/wiki/Preston,_Idaho">Learn More</a>
+    </p>
+ </div> 
+    <img class="picture" src="preston.jpg" alt="preston image">
+</div>
+
+<!--Contact-->
+<div class="contact-info">
+    <img src="map1.PNG" alt="map image"> 
+   <div class="contact-address"> 
+     <p>Season Of Love</p>
+     <p>269 S 5th W</p>
+     <p>Rexburg, Idaho</p>
+     <p>208-555-6666</p> <br>
+     <div class="social-icons">
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#"  class=" fas fa fa-pinterest"></a>
+     <a href="#"  class=" fas fa fa-whatsapp"></a>
+    
+     </div>
+   </div> 
+  <!--icons-->
+ 
+</div>
+</main>
+<footer>
+    <p class="myFooter"> &#169; Season Of Love | <a href=" https://developer.mozilla.org/en-US/">MDN Documentation Site</a> | Samyukta Rai 
+         Last Updated: <span id="lastUpdated"></span></p>
+</footer>
+<script src="preston.js"></script>
+</body>
+</html>
