@@ -35,6 +35,10 @@ p,a {
     color: yellowgreen;
 }
 
+#checkAds {
+   background-color: Tomato;
+   padding: 1em 2em;
+}
 /* navgiation */
 nav {
     font-family:'Open Sans', sans-serif; 
