@@ -24,6 +24,10 @@ p,a {
 .site-info {
    margin: 1em .7em;
 }
+.sitetitle {
+   font-weight: bold;
+   color: rgba(63, 205, 50, 0.986);
+}
 #checkAds {
     background-color: Tomato;
     padding: 1em 2em;
