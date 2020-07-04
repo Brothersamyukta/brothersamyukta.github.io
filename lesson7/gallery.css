@@ -11,7 +11,29 @@ h1,h3 {
 p,a {
    font-family:'Open Sans', sans-serif; 
 }
- 
+.maininfo {
+    display: flex;
+    justify-content: center;
+    background-color: #FAEBD7;
+ }  
+ .logo {
+    width: 75px;
+    height: 75px;
+ }
+ .slogan {
+     text-align: center;
+ }
+ .site-info {
+    margin: 1em .7em;
+ }
+ .sitetitle {
+    font-weight: bold;
+    color: rgba(63, 205, 50, 0.986);
+ }
+ #checkAds {
+     background-color: Tomato;
+     padding: 1em 2em;
+} 
 
 /* navgiation */
 nav {
