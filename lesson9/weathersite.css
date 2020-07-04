@@ -33,7 +33,7 @@ p {
  
 .sitetitle {
      font-weight: bold;
-     color: yellowgreen;
+     color: rgba(63, 205, 50, 0.986);
 }
  #checkAds {
      background-color: Tomato;
@@ -42,7 +42,7 @@ p {
 
 /*navgiation */
  nav {
-    font-family:'Open Sans', sans-serif; 
+    font-family: 'Montserrat', sans-serif; 
     margin: 0 auto;
     line-height: 2.3em;
 }
