@@ -2,31 +2,8 @@
 function toggleMenu () {
     (document.getElementsByClassName("navigation")[0].classList.toggle("responsive"));
 }
-//current date 
-let daysNames = [
-    'Sunday',
-    'Monday',
-    'Tuesday',
-    'Wednesday',
-    'Thursday',
-    'Friday',
-    'Saturday'
-];
-let months = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December'
-];
-  
+document.getElementById('lastUpdated').innerHTML =document.lastModified; 
+
 let date = new Date(document.lastModified);
 let dayName = daysNames[date.getDay()];
 let monthName = months[date.getMonth()];
@@ -53,9 +30,3 @@ function checkAd() {
       document.getElementById('checkAds').style.display = "none";
     }
 }
-
-
-function adjustRating(rating) {
-    document.getElementById("ratingvalue").innerHTML = rating;
-}
-

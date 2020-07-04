@@ -33,7 +33,7 @@ p,a {
  
 .sitetitle {
      font-weight: bold;
-     color: yellowgreen;
+     color: rgba(63, 205, 50, 0.986);
 }
  #checkAds {
      background-color: Tomato;
@@ -73,8 +73,8 @@ nav ul li a:hover {
 }
 
 nav ul li.active a {
-    background-color: rgb(187, 187, 187);
-    color: #fff;
+    background-color: rgba(187, 187, 187, 0.5);
+    color: Tomato;
 }
 
 .navigation li:first-child {
@@ -110,8 +110,18 @@ input {
     
 }
 
-#no,#yes,#mayBe{
-    margin: 0 .4em;
+#yes,#no,#mayBe{
+    margin: 0 .2em;
+}
+.danger {
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    margin:0 .2em;
+  }
+.danger > label {
+    margin: 0.2em;
+    padding: .5em .5em;
 }
 #comment {
     margin:0 2em;

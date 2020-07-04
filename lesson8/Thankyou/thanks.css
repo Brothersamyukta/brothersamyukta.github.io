@@ -6,3 +6,115 @@
     border: 2px dotted lightseagreen;
     padding: 5em 5em;
 }
+nav {
+    font-family:'Open Sans', sans-serif; 
+    margin: 0 auto;
+    line-height: 2.3em;
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+}
+
+.navigation a {
+    background-color: #36454f;
+    display: block;
+    text-align: center;
+    padding: .8rem 2%;
+    font-weight: bold;
+ }
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: yellowgreen;
+    text-align: center;
+} 
+
+nav ul li a:hover {
+    background-color: rgb(187, 187, 189);
+    color: #fff;
+}
+
+nav ul li.active a {
+    background-color: rgba(187, 187, 187, 0.5);
+    color: Tomato;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.responsive li {
+    display: block;
+} 
+/* logo */
+.maininfo {
+    display: flex;
+    justify-content: center;
+    background-color: #FAEBD7;
+}
+ 
+.logo {
+    width: 75px;
+    height: 75px;
+}
+.slogan {
+    text-align: center;
+}
+
+.site-info {
+   margin: 1em .7em;
+}
+
+.sitetitle {
+    font-weight: bold;
+    color: rgba(63, 205, 50, 0.986);
+}
+#checkAds {
+    background-color: Tomato;
+    padding: 1em 2em;
+}
+
+/* footer */
+footer {
+    background-color: #FAEBD7;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+ 
+.firstFooter {
+    letter-spacing: 1px;
+    text-align: center;
+}
+@media only screen and (min-width: 768px) {
+    .navigation {
+         display: flex;
+    }
+     
+    .navigation li {
+         display: block;
+         flex: 1 1 auto;
+    }
+     
+    .navigation a {
+         text-align: center;
+    }
+     
+    .navigation li:first-child {
+         display: none;
+    }
+     
+    .navigation a:hover {
+        color: white;
+    }
+}
