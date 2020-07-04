@@ -5,17 +5,17 @@
 
 /* typography */
 h1,h3 {
-   Font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 p,a {
-   Font-family: 'Ubuntu', sans-serif; 
+   font-family:'Open Sans', sans-serif; 
 }
  
 
 /* navgiation */
 nav {
-    font-family:'Open Sans', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
     margin: 0 auto;
     line-height: 2.3em;
 }
@@ -35,11 +35,9 @@ nav {
 
 nav ul li a {
     display: block;
-    /* padding: .8rem 2%; */
     text-decoration: none;
     color: yellowgreen;
     text-align: center;
-    /* border-top: 1px solid rgba(0,0,0,0.5); */
 } 
 
 nav ul li a:hover {
