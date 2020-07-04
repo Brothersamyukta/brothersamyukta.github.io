@@ -29,3 +29,24 @@ const imgObserver = new IntersectionObserver((entries,imgObserver) => {
 imagesToLoad.forEach(image =>  {
   imgObserver.observe(image);
 });
+  
+document.getElementById('lastUpdated').textContent = fullDate;
+function checkAd() {
+    let dayName = [
+      'Sunday',
+      'Monday',
+      'Tuesday',
+      'Wednesday',
+      'Thursday',
+      'Friday',
+      'Saturday'
+    ];
+    let date = new Date();
+    let checkDay = dayName[date.getDay()];
+    if(checkDay === 'Friday') {
+      document.getElementById('checkAds').style.display = "block";
+      document.getElementById('toggleMenu').style.top = "6.5em";
+    } else {
+      document.getElementById('checkAds').style.display = "none";
+    }
+}
