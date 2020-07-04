@@ -43,13 +43,13 @@ nav ul li a {
 } 
 
 nav ul li a:hover {
-    background-color: rgb(187, 187, 187, 0.5);
-    color: tomato;
+    background-color: rgb(187, 187, 189,);
+    color: #fff;
 }
 
 nav ul li.active a {
-    background-color: rgb(187, 187, 187);
-    color: #fff;
+    background-color: rgb(187, 187, 187, 0.5);
+    color: tomato;
 }
 
 .navigation li:first-child {
