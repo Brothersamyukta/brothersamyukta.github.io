@@ -4,11 +4,10 @@
  }
 /* typography */
 h1,h2,h4 {
-   Font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 p {
     font-family: 'Open Sans', sans-serif;
-    margin: 1em 0;
 }
 
 /* logo */
