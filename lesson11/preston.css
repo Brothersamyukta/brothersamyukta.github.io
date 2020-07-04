@@ -108,7 +108,7 @@ h1 {
    margin-left: 1em;
    padding: 1em 1em;
    background: rgba(240, 255, 255, 0.788);
-   Font-family: 'Ubuntu', sans-serif;  
+   Font-family: 'Open Sans', sans-serif; 
    opacity: 0.6;
    border-radius: 10px;
 }
@@ -121,7 +121,7 @@ h1 {
  /* container */
 .container  {
    display: none;
-   Font-family: 'Ubuntu', sans-serif; 
+   Font-family: 'Open Sans', sans-serif;
 }
 /* section */
 #events {
