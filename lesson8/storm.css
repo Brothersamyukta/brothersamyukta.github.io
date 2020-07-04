@@ -4,11 +4,11 @@
  }
 /* typography */
 h1,h3,h4 {
-   Font-family: 'Open Sans', sans-serif;
+   font-family: 'Montserrat', sans-serif;
 }
 
 p,a {
-   Font-family: 'Ubuntu', sans-serif; 
+    Font-family: 'Open Sans', sans-serif;
 }
 
 /* logo */
@@ -42,7 +42,7 @@ p,a {
 
 /*navgiation */
  nav {
-    font-family:'Open Sans', sans-serif; 
+    font-family: 'Montserrat', sans-serif; 
     margin: 0 auto;
     line-height: 2.3em;
 }
