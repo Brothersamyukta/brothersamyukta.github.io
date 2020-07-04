@@ -6,6 +6,12 @@
     border: 2px dotted lightseagreen;
     padding: 5em 5em;
 }
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+p {
+     Font-family: 'Open Sans', sans-serif;
+}
 nav {
     font-family:'Open Sans', sans-serif; 
     margin: 0 auto;
@@ -15,6 +21,7 @@ nav {
 .navigation {
     list-style: none;
     padding: 0;
+    Font-family: 'Open Sans', sans-serif;
 }
 
 .navigation a {
@@ -89,7 +96,7 @@ footer {
     align-items: center;
     justify-content: center;
     padding: 10px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
  
 .firstFooter {
